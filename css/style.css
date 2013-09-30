@@ -1,0 +1,177 @@
+footer{
+    position:fixed;
+    left:10px;
+    bottom:10px;
+    font-size:12px;
+}
+footer a{
+    color:#aaa;
+    text-transform:uppercase;
+    text-decoration:none;
+    text-shadow:1px 1px 1px #000;
+    margin-right:30px;
+}
+footer a:hover{
+    color:#ddd;
+}
+ul.sdt_menu{
+    margin-top:50px;
+    color: black;
+}
+
+li.floatGauche{
+    height:200px;
+    float:left;
+}
+li.floatRight{
+    height:200px;
+    float:right;
+}
+ul.floatGauche{
+    height:100px;
+    list-style-type:none;
+}
+/*                        Pour le logo FFUC*/
+img.float{
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    width:150px;
+    height:45px;
+}
+
+html, body, #bg, #bg table, #bg td {
+    height:100%;
+    overflow:hidden;
+    width:100%;
+}
+body{                                 
+    height:100%;
+    overflow:auto;
+    width:100%;
+}
+header{
+    margin-top: -1%;
+    margin-left: -3%;
+}
+
+nav{
+    margin-bottom: 2%;
+}
+
+nav ul li a{
+    padding-top: 10px;
+    vertical-align: center;
+}
+
+
+article{
+    overflow: hidden;
+    max-width: 100%;
+    margin: 1%
+}
+/*#bg {
+    height:150%;le div bg doit être deux fois plus grand que la taille de l'écran
+    width:200%;
+    left:-80%;on le décale de la moitié de la taille de l'écran en haut et à gauche
+    top:-65%;
+    position:absolute;
+    z-index:-200; pour qu'il soit toujours en dessous du reste du site
+}
+#bg td {
+    text-align:center;  permet de centrer horizontalement l'image 
+    vertical-align:middle;  permet de centrer verticalement l'image 
+}
+#bg img {
+    min-height:10%;  l'image fera 50% de 200% de la taille de l'écran soit 100%   
+    min-width:10%;  l'image fera 50% de 200% de la taille de l'écran soit 100%   
+}*/
+
+/*span.midd{
+    text-align:center;  permet de centrer horizontalement l'image 
+    vertical-align:middle;  permet de centrer verticalement l'image 
+}*/
+
+ul.sdt_menu{
+
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+    font-size:14px;
+}
+ul.sdt_menu a{
+    text-decoration:none;
+    outline:none;
+        margin-left:15px;
+    text-transform:uppercase;
+    text-shadow:1px 1px 1px #000;
+        color:#fff;
+    font-size:15px;
+    float:left;
+    clear:both;
+    
+    
+}
+ul.sdt_menu li{
+    float:left;
+    width:180px;
+    height:50px;
+    position:relative;
+    cursor:pointer;
+}
+
+ul.sdt_menu li > a{
+    
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:180px;
+    height:50px;
+    z-index:12;
+    background:black url(../images/overlay.png) no-repeat bottom right;
+            background-color : black;
+    -moz-box-shadow:0px 0px 2px #000 inset;
+    -webkit-box-shadow:0px 0px 2px #000 inset;
+    box-shadow:0px 0px 2px #000 inset;
+    border: 3px white outset;
+}
+
+
+/*Position into the box*/
+ul.sdt_menu li span.sdt_wrap{
+    position:absolute;
+    top:25px;
+    left:0px;
+    width:170px;
+    height:60px;
+    z-index:15;
+}
+
+/*Box menu going down*/
+ul.sdt_menu li span.sdt_active{
+    position:absolute;
+    background:#111;
+    top:85px;
+    width:170px;
+    height:0px;
+    left:0px;
+    z-index:14;
+    -moz-box-shadow:0px 0px 4px #000 inset;
+    -webkit-box-shadow:0px 0px 4px #000 inset;
+    box-shadow:0px 0px 4px #000 inset;
+}
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+    margin-left:15px;
+    text-transform:uppercase;
+    text-shadow:1px 1px 1px #000;
+        text-align: center;
+}
+ul.sdt_menu li span span.sdt_link{
+    color:#fff;
+    font-size:15px;
+    float:left;
+    clear:both;
+}

@@ -1,0 +1,1 @@
+<img src="./images/reglesCoinchutc.jpeg" alt="" align="middle" width="1000px" />
