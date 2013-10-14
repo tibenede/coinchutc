@@ -6,7 +6,7 @@
         <meta name="description" content="Site de Coinche de l'utc" />
         <meta name="keywords" content="utc, coinche, coinch'utc, coinche utc,coinchutc"/>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" type="text/css" media="screen"/>
         
         <!-- Le styles -->
         <style type="text/css">
@@ -86,11 +86,46 @@
                 float: right;
             }
             
+            #title_player{
+            	text-align: center;
+            }
+            
+            #datas_player{
+            	margin-left: 25%
+            }
+            
+            
+             .player li {
+            	margin-top : 20px;
+            	margin-left: 20px;
+            }
+            
+            
+            .player #mail{
+            	margin-top : 1px;
+            	margin-left: 20px;
+            }
+
+            .player #first{
+            	margin-top : 30px;
+            	margin-left: 20px;
+            }
+            
+            .player .player_image{
+             	float: left;
+             	margin-bottom: 100px;
+            	padding-bottom: 100px;
+
+            	width: 20%;
+            	height: 20%
+
+            }
+            
             article{
                 text-align: center;
             }
         </style>
-        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
             
             <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
             <!--[if lt IE 9]>
@@ -98,11 +133,11 @@
             <![endif]-->
             
             <!-- Fav and touch icons -->
-            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
-                <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
-                        <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
-                            <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../bootstrap/ico/apple-touch-icon-144-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../bootstrap/ico/apple-touch-icon-114-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                        <link rel="apple-touch-icon-precomposed" href="../bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                            <link rel="shortcut icon" href="../bootstrap/ico/favicon.png">
                                 </head>
                                 
                                 <body>
@@ -114,10 +149,10 @@
                                                 <div class="navbar-inner">
                                                     <div class="container">
                                                         <ul class="nav">
-                                                            <li><a href="./index.html">Accueil</a></li>
-                                                            <li class="active"><a href="./players.html">Nos Coincheurs</a></li>
-                                                            <li><a href="./resultats.html">R&eacute;sultats</a></li>
-                                                            <li><a href="./astuces.html">R&egrave;gles & Astuces</a></li>
+                                                            <li><a href="../index.html">Accueil</a></li>
+                                                            <li class="active"><a href="../players.html">Nos Coincheurs</a></li>
+                                                            <li><a href="../resultats.html">R&eacute;sultats</a></li>
+                                                            <li><a href="../astuces.html">R&egrave;gles & Astuces</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -129,25 +164,35 @@
                                         <!-- Jumbotron -->
                                         <div class="jumbotron">
                                             
-                                            <img src="images/bannierev4.png" alt=""/>
+                                            <img src="../images/bannierev4.png" alt=""/>
                                             
                                         </div>
                                         
                                         <hr>
-                                            
                                             <section>
-                                                
-                                                
-                                                <!-- METTRE TOUT PLEINS DE TRUCS ICI -->
+                                            	<div class="player">
+                                            	    <h1 id="title_player">Team Personne</h1>
+                                            	    <h2 id="title_player">Slogan: Pourquoi personne vient ?</h2>
+                                            	    <img class="player_image" src="images/personne.jpg" alt="Team Personne"/>
+                                            	    <ul id="datas_player"><li id="first"><h3> Etienne Baranger - GX03</h3> </li>
+                                            	    	<ul><li id="mail">email: <a href="mailto:etienne.baranger@gmail.com">etienne.baranger@gmail.com</a> </li></ul> 
+                                            	    <li><h3>Charline Goussard - GX01</h3></li>
+                                            	    <ul><li id="mail">email: <a href="mailto:charline.goussard@gmail.com">charline.goussard@gmail.com</a> </li></ul> 
+                                            	    </ul>
+                                            	
+                                            	    
+                                            	</div>
                                             </section>
                                             
+                                            <br><br><br>
                                             <hr>
+                                            
                                                 
                                                 <div class="footer">
                                                     <a href="http://fr.wikipedia.org/wiki/Coinche">La Coinche</a>
                                                     <!--				<a href="http://wwwassos.utc.fr/bestyear/">BestYear</a>-->
                                                     <a href="http://wwwassos.utc.fr/">Associations</a>
-                                                    <img class="float" src="images/ffuc.png">
+                                                    <img class="float" src="../images/ffuc.png">
                                                 </div>
                                                 
                                                 </div> <!-- /container -->
@@ -155,19 +200,19 @@
                                                 <!-- Le javascript
                                                 ================================================== -->
                                                 <!-- Placed at the end of the document so the pages load faster -->
-                                                <script src="bootstrap/js/jquery.js"></script>
-                                                <script src="bootstrap/js/bootstrap-transition.js"></script>
-                                                <script src="bootstrap/js/bootstrap-alert.js"></script>
-                                                <script src="bootstrap/js/bootstrap-modal.js"></script>
-                                                <script src="bootstrap/js/bootstrap-dropdown.js"></script>
-                                                <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-                                                <script src="bootstrap/js/bootstrap-tab.js"></script>
-                                                <script src="bootstrap/js/bootstrap-tooltip.js"></script>
-                                                <script src="bootstrap/js/bootstrap-popover.js"></script>
-                                                <script src="bootstrap/js/bootstrap-button.js"></script>
-                                                <script src="bootstrap/js/bootstrap-collapse.js"></script>
-                                                <script src="bootstrap/js/bootstrap-carousel.js"></script>
-                                                <script src="bootstrap/js/bootstrap-typeahead.js"></script>        
+                                                <script src="../bootstrap/js/jquery.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-transition.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-alert.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-modal.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-dropdown.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-scrollspy.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-tab.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-tooltip.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-popover.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-button.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+                                                <script src="../bootstrap/js/bootstrap-typeahead.js"></script>        
                                             <!--<script src="bootstrap/js/boostrap.js"></script>-->
                                                 </body>
                                                 </html>
